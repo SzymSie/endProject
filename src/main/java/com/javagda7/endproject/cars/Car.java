@@ -1,17 +1,22 @@
 package com.javagda7.endproject.cars;
 
+import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
-@Table(name="tbl_car")
-public class Car {
+@Data
+@Table(name="cars")
+public class Car implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    @Column(name="id", nullable = false)
+    @Column(name = "id")
     private int id;
+
+    @Column(name = "name", nullable = false)
+    private String name;
 
     @Column(name = "company", nullable = false)
     private String company;
