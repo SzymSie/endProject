@@ -18,8 +18,8 @@ public class Car implements Serializable {
     @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "company", nullable = false)
-    private String company;
+    @Column(name = "brand", nullable = false)
+    private String brand;
 
     @Column(name = "model", nullable = false)
     private String model;

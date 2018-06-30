@@ -12,8 +12,8 @@ public class Department {
     @Column(name="id", nullable = false)
     private int id;
 
-    @Column(name = "adress", nullable = false)
-    private String adress;
+    @Column(name = "address", nullable = false)
+    private String address;
 
     @Column(name = "workers", nullable = false)
     private String workers;

@@ -29,7 +29,7 @@ public class CarService {
         return carRepository.save(car);
     }
 
-    public void updateCar(String id, Car car) {
+    public void updateCar(int id, Car car) {
         carRepository.save(car);
     }
 

@@ -23,8 +23,8 @@ public class Client {
     @Column(name = "email", nullable = false)
     private String email;
 
-    @Column(name = "adress", nullable = false)
-    private String adress;
+    @Column(name = "address", nullable = false)
+    private String address;
 
 
 }

@@ -31,8 +31,8 @@ public class Company {
     @Column(name = "domain", nullable = false)
     private String domain;
 
-    @Column(name = "adress", nullable = false)
-    private String adress;
+    @Column(name = "address", nullable = false)
+    private String address;
 
     @Column(name = "owner", nullable = false)
     private String owner;
