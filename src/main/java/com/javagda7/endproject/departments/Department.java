@@ -1,10 +1,15 @@
 package com.javagda7.endproject.departments;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import com.javagda7.endproject.cars.Car;
+import com.javagda7.endproject.workers.Worker;
+import lombok.Data;
 
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+@Data
+@Table(name="departments")
 public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,9 +20,9 @@ public class Department {
     @Column(name = "address", nullable = false)
     private String address;
 
-    @Column(name = "workers", nullable = false)
-    private String workers;
+    @ManyToOne
+    private Worker worker;
 
-    @Column(name = "availableCars", nullable = false)
-    private String availableCars;
+    @ManyToOne
+    private Car car;
 }
